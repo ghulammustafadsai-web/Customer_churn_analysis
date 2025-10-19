@@ -26,7 +26,7 @@ The analysis aims to identify key drivers behind customer churn and provide acti
 
 4. **Demographics**: 
   - Senior citizens (aged 65+) show a churn rate of 41%, compared to 26% among younger customers.
-  - **Recommendation: Create personalized retention programs targeted at senior customers.
+  - **Recommendation**: Create personalized retention programs targeted at senior customers.
 
 ## Visualizations
 The analysis includes various visualizations such as:
