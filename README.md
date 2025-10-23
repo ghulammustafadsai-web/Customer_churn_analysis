@@ -1,44 +1,93 @@
-# Teco Customer Churn Analysis
+# 🧠 Customer Churn Analysis — Portfolio Project
 
-## Overview
-This project analyzes customer churn for Teco, a telecommunications company. The primary focus is on understanding the factors influencing customer churn, particularly through the lens of payment methods and contract types. The insights gained aim to guide the company in crafting effective retention strategies.
+This project focuses on analyzing customer churn behavior to identify key factors that drive customers to discontinue their subscriptions.  
+It highlights important retention insights and demonstrates practical data analysis and visualization skills — a crucial part of any Data Science portfolio.
 
-## Objective
-The analysis aims to identify key drivers behind customer churn and provide actionable recommendations to enhance customer retention. By understanding the relationships between contract types, payment methods, and customer tenure, Teco can implement targeted strategies to minimize churn.
+---
 
-## Project Structure
-- churn_analysis.ipynb: Jupyter notebook containing the complete analysis, including data processing, exploratory data analysis, and visualizations.
-- data/Customer Churn.csv: Dataset used for the analysis, containing customer information and churn status.
-- Teco Customer Churn Analysis.pdf: Summary document detailing key findings and recommendations.
+## 📌 Objective
 
-## Key Insights
-1.**Contract Type**: 
-  - Customers on month-to-month contracts exhibit a higher churn rate (42%) compared to those on yearly (11%) or bi-annual contracts (3%).
-  - **Recommendation**: Promote long-term contracts to improve retention.
+To explore customer churn data, understand behavioral patterns, and identify actionable strategies that can help reduce churn and improve customer retention.
 
-2. **Payment Methods**: 
-  - Customers using electronic checks are more likely to churn (45%) than those using credit cards or bank transfers (15-18%).
-  - **Recommendation**: Encourage customers to switch to more reliable payment methods.
+---
 
-3. **Churn by Tenure**: 
-  - Customers with less than one year of tenure have a churn rate of 50%, indicating a critical need for early engagement strategies.
-  - **Recommendation**: Focus on improving the customer experience within the first year.
+## 🧰 Tools & Libraries Used
 
-4. **Demographics**: 
-  - Senior citizens (aged 65+) show a churn rate of 41%, compared to 26% among younger customers.
-  - **Recommendation**: Create personalized retention programs targeted at senior customers.
+| Category | Tools |
+|-----------|-------|
+| Data Handling | **Python**, **Pandas**, **NumPy** |
+| Visualization | **Matplotlib**, **Seaborn** |
+| Environment | **Jupyter Notebook** |
 
-## Visualizations
-The analysis includes various visualizations such as:
-- Bar plots illustrating churn rates by contract type and payment method.
-- Line graphs showing churn trends over customer tenure.
+---
 
-These visual aids enhance the understanding of customer behavior and the impact of different factors on churn rates.
+## 🗂️ Dataset Overview
 
-## Installation
-To run this project, ensure you have the following Python libraries installed:
+The dataset contains customer demographics, subscription details, and service usage information.  
+The key target variable is **`Churn`**, indicating whether a customer left (Yes) or stayed (No).
 
-- numpy
-- pandas
-- matplotlib.pyplot
-- seaborn  
+**Key Columns:**
+- `customerID` – Unique customer identifier  
+- `gender`, `SeniorCitizen`, `Partner`, `Dependents` – Demographics  
+- `tenure`, `Contract`, `PaymentMethod` – Account details  
+- `MonthlyCharges`, `TotalCharges` – Billing metrics  
+- `Churn` – Target variable (Yes/No)
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+### 1️⃣ Churn Rate by Contract Type
+Shows how churn rate varies based on the type of customer contract.
+
+
+<img width="1800" height="1200" alt="churn_rate" src="https://github.com/user-attachments/assets/f0c6a5ad-1781-4235-b2af-c8546cb6dae8" />
+
+
+### 2️⃣ Percentage of Churned Customers
+
+<img width="1200" height="1200" alt="Percentage_pf_churned" src="https://github.com/user-attachments/assets/3611fe83-df70-4171-a481-daf6b05cdcdf" />
+
+---
+
+### 3️⃣ Churn by Senior Citizen (Stacked Bar Chart)
+Compares churn rates between senior and non-senior customers.
+
+<img width="1800" height="1200" alt="Churn_by_seniorcitizen" src="https://github.com/user-attachments/assets/0fbd2a42-87c1-4c56-a29c-f5aa11600207" />
+
+---
+
+### 4️⃣ Churn on the Basis of Tenure
+Shows how customer tenure (length of relationship) impacts churn probability.
+
+
+<img width="3000" height="1200" alt="churn_by_tenur" src="https://github.com/user-attachments/assets/21bd890d-fd8b-49be-bb3c-a360eaa06af1" />
+
+---
+
+## 🔍 Key Insights
+
+- **Contract type** has a major impact — month-to-month customers churn far more than others.  
+- **Overall churn rate** shows moderate attrition; retention strategies are needed for short-term users.  
+- **Senior citizens** show slightly higher churn than younger customers.  
+- **Longer tenure** strongly reduces churn likelihood — loyalty improves with time.
+
+---
+
+## 🧾 Conclusion
+
+Customer churn is mainly influenced by **contract type**, **tenure**, and **age group**.  
+To minimize churn, businesses should:
+- Promote **long-term contract options** with incentives.  
+- Offer **special retention programs** for senior customers.  
+- Focus on improving early customer experience to increase tenure.
+
+This project demonstrates data-driven customer insights and visualization storytelling — essential for decision-making and predictive modeling.
+
+---
+
+## 📁 Project Structure
+
+
+
+
